@@ -452,6 +452,158 @@ body {
   margin-top: 20px;
 }
 
+/* section5 */
+.section5{
+    background: #6B2B00;
+    padding: 40px;
+    
+}
+.container5{
+    justify-items: center;
+    
+}
+    
+.works1{
+  display: flex;
+  gap: 40px;
+  justify-items: center;
+  align-items: center;
+  padding-left: 80px;
+    }
+    .works2{
+  display: flex;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 20px;
+
+  
+    }
+
+    /* sectiono 6 */
+    /* Reset and Base Styles */
+        .nasalClip-resetStyle {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        /* Container Styles */
+        #nasalClip-mainContainer {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header Section */
+        .nasalClip-headerSection {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .nasalClip-mainHeading {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+        
+        .nasalClip-subHeading {
+            font-size: 1.5rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        /* Before/After Section */
+        .nasalClip-comparisonSection {
+            display: flex;
+            gap: 60px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-bottom: 50px;
+        }
+        
+        .nasalClip-comparisonBox {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+            padding: 20px;
+            margin: 10px;
+        }
+        
+       
+        
+        @media (max-width: 480px) {
+            .nasalClip-mainHeading {
+                font-size: 1.8rem;
+            }
+            
+            .nasalClip-comparisonLabel {
+                font-size: 1.5rem;
+            }
+            
+            .nasalClip-featureTitle {
+                font-size: 1.1rem;
+            }
+        }
+        .after-before{
+          display: flex;
+          min-width: 600px;
+          gap: 20px;
+          justify-items: center;
+          gap: 60px;
+          padding-left: 250px;
+        }
+        .after h2{
+            font-size: 20px;
+            color: #000;
+            align-items: center;
+            justify-items: center;
+            gap: 10px;
+        }
+        .after p{
+            font-size: 20px;
+             color: #000;
+        }
+        .card{
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+        .before h2{
+            font-size: 20px;
+            color: #000;
+            align-items: center;
+            justify-items: center;
+            gap: 10px;
+        }
+        .before p{
+            font-size: 20px;
+             color: #000;
+        }
+
+        .section7{
+          background:#6B2B00;
+          
+        }
+    
+        /* section8 */
+        .feedback{
+          background: #FFFFFF;
+          justify-content: center;
+          align-items: flex-start;
+        }
+        .review{
+          padding-left: 100px;
+        }
+        .review h1{
+          font-size: 30px;
+          padding-bottom: 20px;
+          color: #000;
+          padding-top: 50px;
+        }
+
+        
 
 
 /* Responsive */
