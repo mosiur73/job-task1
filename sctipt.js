@@ -30,3 +30,28 @@
     });
   });
 
+
+          document.addEventListener('DOMContentLoaded', () => {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const faqItem = question.closest('.faq-item');
+                    const faqAnswer = faqItem.querySelector('.faq-answer');
+                    const toggleIcon = question.querySelector('.toggle-icon');
+
+                    // Toggle the 'open' class on the faq-item
+                    faqItem.classList.toggle('open');
+
+                    // Adjust max-height for smooth transition
+                    if (faqItem.classList.contains('open')) {
+                        faqAnswer.style.maxHeight = faqAnswer.scrollHeight + 'px';
+                        toggleIcon.textContent = '-';
+                    } else {
+                        faqAnswer.style.maxHeight = '0';
+                        toggleIcon.textContent = '+';
+                    }
+                });
+            });
+        });
+

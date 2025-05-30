@@ -602,8 +602,320 @@ body {
           color: #000;
           padding-top: 50px;
         }
+          
 
+        /* section 10 */
+        .science-clab{
+          background: #6B2B00;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .clab h1{
+          color: #FFFFFF;
+          font-size: 34px;
+        }
+        .clab p{
+          color:#FFFFFF ;
+        }
+
+
+        /* faq section  */
+        .faq{
+          margin-left: 150px;
+        }
+        .faq-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 1200px; /* Adjust max-width as needed */
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 30px; /* Space between columns */
+}
+
+.faq-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between FAQ items in a column */
+}
+
+.faq-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden; /* Hide overflowing content (the answer) */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.faq-item.open {
+    background-color: #e6f7ff; /* Slightly different background when open */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 25px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    font-size: 1.1em;
+    border-bottom: 1px solid #eee; /* Separator for question */
+}
+
+.faq-item.open .faq-question {
+    border-bottom: none; /* No border when open */
+}
+
+.faq-question span:first-child {
+    flex-grow: 1; /* Allow the text to take up available space */
+}
+
+.toggle-icon {
+    font-size: 1.5em;
+    color: #555;
+    margin-left: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.faq-item.open .toggle-icon {
+    transform: rotate(0deg); /* No rotation for '-' */
+}
+
+.faq-answer {
+    padding: 0 25px;
+    max-height: 0; /* Initially hidden */
+    overflow: hidden;
+    transition: max-height 0.4s ease-out; /* Smooth transition for height */
+}
+
+.faq-answer p {
+    margin: 0; /* Remove default paragraph margin */
+    padding-bottom: 20px; /* Add padding to the bottom of the answer */
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .faq-grid {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+
+    .faq-container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+    .faq-question {
+        padding: 15px 20px;
+        font-size: 1em;
+    }
+
+    .faq-answer {
+        padding: 0 20px;
+    }
+}
+
+.order{
+  background-color:#6B2B00;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    max-width: 1200px; /* Adjust max-width as needed */
+    width: 100%;
+}
+.order h1{
+  color: #FFFFFF;
+  font-size: 32px;
+  text-align: center;
+}
+.order img{
+  padding-left: 500px;
+}
+
+.card-hed{
+  color:#FF6600 ;
+  text-align: center;
+}
+
+.plan-card{
+  display: flex;
+  gap: 10px;
+}
         
+
+/* footer section */
+
+.get-in-touch-section {
+    background-color: #6B2B00; 
+    color: #fff;
+    padding: 40px; 
+    text-align: center;
+}
+
+.content-wrapper {
+    max-width: 900px; 
+    margin: 0 auto; 
+}
+
+.section-title {
+    font-size: 3em;
+    margin-bottom: 6px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.section-description {
+    font-size: 1.1em;
+    line-height: 1.6;
+    max-width: 700px; /* Limit width for readability */
+    margin-left: auto;
+    margin-right: auto;
+    color: #f0f0f0; /* Slightly lighter white for description */
+}
+
+.order-button {
+    display: inline-block;
+    background-color: #ff7f27; 
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    
+}
+
+.order-button:hover {
+    background-color: #e06a1c; 
+}
+
+.order-button .arrow {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.3); 
+    width: 100%;
+    max-width: 900px; 
+    margin-left: auto;
+    margin-right: auto;
+    margin: 10px 10px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    
+}
+
+.copyright {
+    font-size: 0.9em;
+    color: #ccc;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 35px; /* Space between links */
+    flex-wrap: wrap;
+    justify-content: center; /* Center links on smaller screens */
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.95em;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px; /* Space between social icons */
+}
+
+.social-icon {
+    display: inline-flex; /* Use inline-flex for proper centering of icon */
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Border for icons */
+    border-radius: 8px; /* Rounded corners for icon boxes */
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Slight background on hover */
+    border-color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .get-in-touch-section {
+        padding: 60px 20px 30px;
+    }
+
+    .section-title {
+        font-size: 2.5em;
+    }
+
+    .section-description {
+        font-size: 1em;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .copyright,
+    .footer-links,
+    .social-icons {
+        margin-bottom: 20px; /* Add space between stacked elements */
+    }
+
+    .footer-links {
+        flex-direction: column; /* Stack links vertically */
+        gap: 10px; /* Reduce gap between stacked links */
+    }
+}
 
 
 /* Responsive */
