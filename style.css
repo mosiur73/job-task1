@@ -1,0 +1,501 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.navbar {
+  background: white;
+  border-bottom: 1px solid #eee;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 40px;
+  color: #ff7a00;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.btn-contact {
+  background: #ff7a00;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  
+}
+
+.btn-contact:hover {
+  background: #e56800;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background: url(image/7ce2691f10514a66adfb63f38260c10a\ 1.png);
+  padding: 40px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.customers {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.customers img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.customers span {
+  background: white;
+  color: #333;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn-shop {
+  background: #ff7a00;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* section2 */
+.section2{
+    background: #6B2B00;
+    padding: 40px;
+}
+.container2{
+    justify-items: center;
+    
+}
+
+    .pain-points {
+        display: flex;
+        gap: 60px;
+        align-items: center;
+        justify-items: center;
+    }
+    .pain-points img{
+        height: 450px;
+    }
+    .solution{
+        display: flex;
+        gap: 60px;
+        align-items: center;
+    }
+    .solution img{
+        margin-left: 60px;
+        height: 450px;
+    }
+        h1, h2 {
+            color: white;
+            
+        }
+
+        h1 {
+            font-size: 28px;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 24px;
+            
+        }
+
+        p {
+            margin-bottom: 20px;
+            color:white;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 20px 0;
+            text-decoration: none;
+            
+        }
+
+        li {
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+            color:white;
+            text-decoration: none;
+        }
+
+        li:before {
+            content: "•";
+            color: #FF6600;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* section 2 */
+      .product-card-container {
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding-top: 60px;
+      padding-bottom: 60px;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .product-image-box {
+      flex: 1 1 300px;
+      background: #fff7f2;
+      
+      border-radius: 20px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .product-main-image {
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .product-thumbnails {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .product-thumbnail {
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      object-fit: cover;
+      border: 2px solid transparent;
+      cursor: pointer;
+    }
+
+    .product-thumbnail.active {
+      border-color: #FF6600;
+      background: #fff7f2;
+    }
+
+    .product-details-box {
+      flex: 1 1 400px;
+    }
+
+    .product-rating {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-bottom: 10px;
+    }
+
+    .product-rating i {
+      color: gold;
+    }
+
+    .product-title {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .product-price {
+      font-size: 24px;
+      font-weight: bold;
+      color: #FF6600;
+      margin: 10px 0;
+    }
+
+    .product-price del {
+      color: #888;
+      font-size: 16px;
+      margin-left: 10px;
+    }
+
+    .discount-tag {
+      background: #ffefeb;
+      color: #FF6600;
+      font-weight: 600;
+      font-size: 12px;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-left: 10px;
+    }
+
+    .product-description-title {
+      font-weight: 600;
+      margin: 20px 0 10px;
+    }
+
+    .product-description {
+      font-size: 14px;
+      color: #444;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .product-benefits {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .benefit-item {
+      background: #fff0e8;
+      color: #FF6600;
+      font-size: 14px;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-weight: 500;
+    }
+
+    .add-to-cart-btn {
+      background: #FF6600;
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+
+    .payment-icons {
+      display: flex;
+      gap: 10px;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+
+    .payment-icons img {
+      height: 30px;
+    }
+
+    .product-extra-info {
+      font-size: 14px;
+      color: #555;
+      margin-top: 10px;
+    }
+
+
+    /* section 4 */
+    .nasalclip-carousel {
+  padding: 60px 20px;
+  text-align: center;
+  background: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+.nasalclip-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.nasalclip-description {
+  font-size: 16px;
+  color: #444;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.nasalclip-slider {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.nasalclip-slide {
+  flex-shrink: 0;
+  width: 100%;
+  display: none;
+  position: relative;
+}
+
+.nasalclip-slide.active {
+  display: block;
+}
+
+.nasalclip-slide img {
+  width: 800px;
+  height: 400px;
+  border-radius: 20px;
+}
+
+.nasalclip-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  text-align: left;
+  color: #000;
+  /* background: rgba(255, 255, 255, 0.8); */
+  padding: 15px 20px;
+  border-radius: 10px;
+  max-width: 70%;
+}
+
+.nasalclip-caption h3 {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.nasalclip-caption p {
+  font-size: 14px;
+  margin: 0;
+  color: #000;
+}
+
+.nasalclip-controls {
+  margin-top: 20px;
+}
+
+.nav-btn {
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  font-size: 18px;
+  margin: 0 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.nasalclip-dots {
+  margin-top: 25px;
+}
+
+.dot {
+  display: inline-block;
+  width: 30px;
+  height: 6px;
+  background: #f8c9a0;
+  margin: 0 5px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.dot.active {
+  background: #ff6600;
+  width: 35px;
+}
+.testimonial{
+  margin-top: 20px;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .overlay {
+    padding: 20px;
+  }
+
+  .btn-contact {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+}
+
+.nasalclip-title {
+    font-size: 28px;
+  }
+
+  .nasalclip-description {
+    font-size: 14px;
+  }
+
+  .nasalclip-caption h3 {
+    font-size: 18px;
+  }
+
+  .nasalclip-caption p {
+    font-size: 12px;
+  }
+
+  .nav-btn {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+
